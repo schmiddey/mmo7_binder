@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- MMO7 Binder cfg file -->
+
+<!-- 
+Description
+
+mouse_js_device : joystick device mounted with mad catz mouse (e.g. /dev/input/js0) or use udev rules
+
+mouse_btn  : id of Mousebutton -> find out with get_btn_id tool
+type       : type of button click type -> valid values [release, press]
+system_cmd : system commad to execute(e.g. xdotool key a) this example will send keyboard button A, xdotools must be installed
+
+ -->
+
+<config>
+   <mouse_js_device>/dev/input/js0</mouse_js_device>
+      
+   <action>
+      <mouse_btn>11</mouse_btn>
+      <type>press</type>
+      <system_cmd>xdotool key a</system_cmd>
+   </action>
+   
+   <action>
+      <mouse_btn>12</mouse_btn>
+      <type>press</type>
+      <system_cmd>xdotool key b</system_cmd>
+   </action>
+
+   <action>
+      <mouse_btn>13</mouse_btn>
+      <type>press</type>
+      <system_cmd>xdotool key c</system_cmd>
+   </action>  
+   
+   <action>
+      <mouse_btn>18</mouse_btn>
+      <type>press</type>
+      <system_cmd>xdotool key c</system_cmd>
+   </action>   
+   
+   
+</config>
